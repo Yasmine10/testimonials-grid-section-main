@@ -191,7 +191,7 @@ body {
   z-index: -1;
   width: 6.5rem;
   height: 6.375rem;
-  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-image: url("/testimonials-grid-section-main/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
 }
 .grid-component .card:nth-of-type(4) .author-container .border {
