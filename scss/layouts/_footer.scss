@@ -1,0 +1,12 @@
+@use "../abstracts/index" as *;
+
+footer {
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: $clr-primary-moderate-violet;
+    }
+}

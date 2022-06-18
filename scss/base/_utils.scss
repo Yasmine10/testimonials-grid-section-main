@@ -1,0 +1,22 @@
+@use "../abstracts/index" as *;
+
+.container {
+    width: Min(90%, pxToRem(1110));
+    margin-inline: auto;
+}
+
+.bg-white {
+    background-color: $clr-primary-white;
+}
+
+.bg-moderate-violet {
+    background-color: $clr-primary-moderate-violet;
+}
+
+.bg-very-dark-grayish-blue {
+    background-color: $clr-primary-very-dark-grayish-blue;
+}
+
+.bg-very-dark-blackish-blue {
+    background-color: $clr-primary-very-dark-blackish-blue;
+}

@@ -1,0 +1,271 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list],
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Colors */
+/* Typography */
+/* Convert pixels to REM,EM */
+/* hsla color */
+/* media queries for responsiveness */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+header,
+footer {
+  flex-grow: 0;
+}
+
+main {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+}
+
+body {
+  font-family: Barlow Semi Condensed, sans-serif;
+  font-size: 0.8125rem;
+}
+
+.container {
+  width: min(90%, 69.375rem);
+  margin-inline: auto;
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.bg-moderate-violet {
+  background-color: hsl(263deg, 55%, 52%);
+}
+
+.bg-very-dark-grayish-blue {
+  background-color: hsl(217deg, 19%, 35%);
+}
+
+.bg-very-dark-blackish-blue {
+  background-color: hsl(219deg, 29%, 14%);
+}
+
+.grid-component {
+  display: grid;
+  row-gap: 1.5rem;
+  margin-block: 4.4375rem;
+}
+.grid-component .card {
+  padding: 1.625rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  position: relative;
+  z-index: 1;
+}
+.grid-component .card:first-of-type .author-container .border {
+  outline-color: hsl(264deg, 82%, 70%) !important;
+}
+.grid-component .card:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  z-index: -1;
+  width: 6.5rem;
+  height: 6.375rem;
+  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+}
+.grid-component .card:nth-of-type(4) .author-container .border {
+  outline-color: hsl(263deg, 55%, 52%) !important;
+}
+.grid-component .card .author-container {
+  display: grid;
+  grid-template-columns: 1.75rem auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.25rem 1.0625rem;
+  margin-bottom: 1.125rem;
+}
+.grid-component .card .author-container .image {
+  grid-column: 1/2;
+  grid-row: 1/span 2;
+  border-radius: 50%;
+}
+.grid-component .card .author-container .image.border {
+  outline: 2px solid hsl(263deg, 55%, 52%);
+}
+.grid-component .card .author-container .name {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 13px;
+}
+.grid-component .card .author-container .subtitle {
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 11px;
+  opacity: 0.5;
+}
+.grid-component .card .summary {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+.grid-component .card .full-text {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 0.7;
+}
+.grid-component .card--light .author-container .name,
+.grid-component .card--light .author-container .subtitle {
+  color: hsl(219deg, 29%, 14%);
+}
+.grid-component .card--light .summary,
+.grid-component .card--light .full-text {
+  color: hsl(219deg, 29%, 14%);
+}
+.grid-component .card--dark .author-container .name,
+.grid-component .card--dark .author-container .subtitle {
+  color: hsl(0deg, 0%, 100%);
+}
+.grid-component .card--dark .summary,
+.grid-component .card--dark .full-text {
+  color: hsl(0deg, 0%, 100%);
+}
+.grid-component .card--color .author-container .name,
+.grid-component .card--color .author-container .subtitle {
+  color: hsl(0deg, 0%, 100%);
+}
+.grid-component .card--color .summary {
+  color: hsl(0deg, 0%, 100%);
+}
+.grid-component .card--color .full-text {
+  color: hsl(0deg, 0%, 81%);
+}
+@media (min-width: 1200px) {
+  .grid-component {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    gap: 1.5rem 1.875rem;
+  }
+  .grid-component .col-2 {
+    grid-column: span 2;
+  }
+  .grid-component .row-2 {
+    grid-row: span 2;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .grid-component .card:first-of-type::after {
+    right: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-component .card:nth-of-type(3) {
+    grid-row: 2/3;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-component .card:last-of-type {
+    grid-column: 4/-1;
+  }
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(263deg, 55%, 52%);
+}
