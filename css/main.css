@@ -170,6 +170,7 @@ body {
   display: grid;
   row-gap: 1.5rem;
   margin-block: 4.4375rem;
+  padding-top: 1.03125rem;
 }
 .grid-component .card {
   padding: 1.625rem 2rem 2rem;
