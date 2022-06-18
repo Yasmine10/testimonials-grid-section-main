@@ -266,11 +266,11 @@ body {
 }
 .grid-component .card--light .author-container .name,
 .grid-component .card--light .author-container .subtitle {
-  color: hsl(219deg, 29%, 14%);
+  color: hsl(217deg, 19%, 35%);
 }
 .grid-component .card--light .summary,
 .grid-component .card--light .full-text {
-  color: hsl(219deg, 29%, 14%);
+  color: hsl(217deg, 19%, 35%);
 }
 .grid-component .card--dark .author-container .name,
 .grid-component .card--dark .author-container .subtitle {
